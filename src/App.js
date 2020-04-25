@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar'
+import Main from './components/Main';
+import {barsNYList} from './services/ApiHelper'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { 
+      list:[]
+     };
+  }
+
+  // Render and Handle Change
+  
+  // all bar lists
+  async componentDidMount(){
+    let response = await barsNYList()
+    this.setState({
+      list: response.data
+    })
+    console.log(response)
+  }
+  async handleAllNYClick(e){
+    let allNYBars = await barsNYList()
+    this.setState({
+      allNY: allNYBars.data.response.venues
+    })
+  }
+
+
+  render() {
+    return (
+      <div className="bartap">
+      <NavBar/>
+      <Main />
     </div>
-  );
+    );
+  }
 }
 
 export default App;

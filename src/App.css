@@ -1,10 +1,209 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.bartap {
+background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+/* Cities */
+.cities{
+  display: flex;
+  flex-direction: column;
+}
+.cities-NY, .cities-DC, .cities-MIA, .cities-ATL, .cities-HOU, .cities-NO, .cities-PHX, .cities-LA{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.cities-NY a, .cities-DC a, .cities-MIA a, .cities-ATL a, .cities-HOU a, .cities-NO a, .cities-PHX a, .cities-LA a{
+  text-decoration: none;
+  color: white;
+  
+}
+.cities-NY{
+  background-image: url('./images/NYC.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+  padding: ;
+}
+.cities-DC{
+  background-image: url('./images/DC.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-MIA{
+  background-image: url('./images/Miami.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-ATL{
+  background-image: url('./images/Atl.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-HOU{
+  background-image: url('./images/Houston.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-NO{
+  background-image: url('./images/NewOrleans.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-PHX{
+  background-image: url('./images/Pheonix.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+.cities-LA{
+  background-image: url('./images/LA.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  align-items: center;
+}
+/* New York BarsList */
+.barslist{
+  height: 50rem;
+  width: 100%;
+  display: block
+}
+.barslist a{
+  text-decoration: none;
+}
+.NYbarslist-allBars, .NYbarslist-row1, .NYbarslist-row2{
+  display: flex;
+  justify-content: space-around;
+  height: 14rem;
+  align-items: center;
+  /* font-size: 2rem; */
+}
+.NYbarslist-allBars{
+  margin-top: 1rem;
+  justify-content: center;
+}
+.NYbarslist-row1{
+  margin-top: 2rem;
+}
+.NYbarslist-row2{
+  margin-top: 2rem;
+}
+.NYbarslist-allBars-all,.NYbarslist-row1-lounges, .NYbarslist-row1-cocktail, .NYbarslist-row1-sportsbar, .NYbarslist-row2-hookah, .NYbarslist-row2-dive, .NYbarslist-row2-whiskey{
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: black 3px 2px 36px 0;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.NYbarslist-allBars-all:hover,.NYbarslist-row1-lounges:hover, .NYbarslist-row1-cocktail:hover, .NYbarslist-row1-sportsbar:hover, .NYbarslist-row2-hookah:hover, .NYbarslist-row2-dive:hover, .NYbarslist-row2-whiskey:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.NYbarslist-allBars-all a,.NYbarslist-row1-lounges a, .NYbarslist-row1-cocktail a, .NYbarslist-row1-sportsbar a, .NYbarslist-row2-hookah a, .NYbarslist-row2-dive a, .NYbarslist-row2-whiskey a{
+  text-decoration: none;
+  color: white;
+}
+.NYbarslist-allBars-all{
+  background-image: url('./images/liquor.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row1-lounges{
+  background-image: url('./images/cheers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row1-cocktail{
+  background-image: url('./images/cocktail.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row1-sportsbar{
+  background-image: url('./images/beertap.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row2-hookah{
+  background-image: url('./images/hookah.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row2-dive{
+  background-image: url('./images/drinks.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NYbarslist-row2-whiskey{
+  background-image: url('./images/whiskey.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Results Container */
+
+ .allNYResults{
+  color: white;
+  display: block;
+  height: 40rem;
+}
+.allNYResults-title{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.allNYResults-data{
+  display: flex;
+  margin-top: 2rem;
+}
+.allNYResults-data-list{
+  width: 55%;
+  height: 32.5rem;
+  padding: 2rem;
+}
+.allNYResults-data-map{
+  width: 45%;
+  height: 32.5rem;
+  background-image: url('./images/DCCapitol.jpg');
 }
 
 @media (prefers-reduced-motion: no-preference) {
