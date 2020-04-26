@@ -2,39 +2,73 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar'
 import Main from './components/Main';
-import {barsNYList} from './services/ApiHelper'
+import {barsNYList, loungesNYList, cocktailNYList, sportsBarNYList, hookahNYList, diveBarNYList, whiskeyNYList} from './services/ApiHelper'
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = { 
-      list:[]
+      list:[],
      };
+
   }
 
   // Render and Handle Change
   
   // all bar lists
-  async componentDidMount(){
-    let response = await barsNYList()
+  async componentDidMount(e){
+    let responseNY = await barsNYList()
     this.setState({
-      list: response.data
+      allnylist: responseNY.data
     })
-    console.log(response)
-  }
-  async handleAllNYClick(e){
-    let allNYBars = await barsNYList()
-    this.setState({
-      allNY: allNYBars.data.response.venues
-    })
-  }
+  
 
+  // all Lounges lists
+    let responsNY = await loungesNYList()
+    this.setState({
+      nylounges: responsNY.data
+    })
+  
+  // all Cocktail
+    let responNY = await cocktailNYList()
+    this.setState({
+      nycocktail: responNY.data
+    })
+  
+    let respoNY = await sportsBarNYList()
+    this.setState({
+      nysportsbar: respoNY.data
+    })
+  
+    let respNY = await hookahNYList()
+    this.setState({
+      nyhookah: respNY.data
+    })
+  
+    let resNY = await diveBarNYList()
+    this.setState({
+      nydivebar: resNY.data
+    })
+  
+    let rspnsNY = await whiskeyNYList()
+    this.setState({
+      nywhiskeybar: rspnsNY.data
+    })
+  }
 
   render() {
     return (
       <div className="bartap">
       <NavBar/>
-      <Main />
+      <Main 
+        allnylist={this.state.allnylist} 
+        nylounges={this.state.nylounges}
+        nycocktail={this.state.nycocktail}
+        nysportsbar={this.state.nysportsbar}
+        nyhookah={this.state.nyhookah}
+        nydivebar={this.state.nydivebar}
+        nywhiskeybar={this.state.nywhiskeybar}
+      />
     </div>
     );
   }

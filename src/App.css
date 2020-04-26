@@ -25,8 +25,13 @@ background-color: #282c34;
 .cities-NY a, .cities-DC a, .cities-MIA a, .cities-ATL a, .cities-HOU a, .cities-NO a, .cities-PHX a, .cities-LA a{
   text-decoration: none;
   color: white;
-  
 }
+
+.cities-NY:hover, .cities-DC:hover, .cities-MIA:hover, .cities-ATL:hover, .cities-HOU:hover, .cities-NO:hover, .cities-PHX:hover, .cities-LA:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 .cities-NY{
   background-image: url('./images/NYC.jpg');
   background-position: center;
@@ -35,7 +40,6 @@ background-color: #282c34;
   background-repeat: no-repeat;
   height: 20rem;
   align-items: center;
-  padding: ;
 }
 .cities-DC{
   background-image: url('./images/DC.jpg');
@@ -180,30 +184,31 @@ background-color: #282c34;
 
 /* Results Container */
 
- .allNYResults{
+ #container{
   color: white;
   display: block;
-  height: 40rem;
+  height: 100%;
 }
-.allNYResults-title{
+#container-title{
   font-size: 3rem;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
-.allNYResults-data{
+#container-data{
   display: flex;
   margin-top: 2rem;
 }
-.allNYResults-data-list{
+#container-data-list{
   width: 55%;
-  height: 32.5rem;
+  height: 100%;
   padding: 2rem;
 }
-.allNYResults-data-map{
+#container-data-map{
   width: 45%;
   height: 32.5rem;
   background-image: url('./images/DCCapitol.jpg');
+  margin-bottom: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

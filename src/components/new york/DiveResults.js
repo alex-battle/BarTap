@@ -1,13 +1,13 @@
 import React from 'react';
 
-function HookahResults(props){
-    const data = (props.nyhookah && props.nyhookah.response)
+function DiveResults(props){
+    const data = (props.nydivebar && props.nydivebar.response)
     let renderVenue
     if (data !== undefined) {
         renderVenue = data.venues.map((venues) => {
             return (
                 <div>                    
-                        <h4>{venues.name}</h4>
+                    <h4>{venues.name}</h4>
                 </div>
             )
         })
@@ -27,4 +27,4 @@ function HookahResults(props){
         </div>
     )
 }
-export default HookahResults;
+export default DiveResults;

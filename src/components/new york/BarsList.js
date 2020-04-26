@@ -17,18 +17,18 @@ function BarsList() {
                     <Link to="/newyork/cocktail">Cocktail</Link>
                 </div>
                 <div className="NYbarslist-row1-sportsbar">
-                    <Link to="/newyork/sportbar">Sports Bar</Link>
+                    <Link to="/newyork/sportsbar">Sports Bar</Link>
                 </div>
             </div>
             <div className="NYbarslist-row2">
                 <div className="NYbarslist-row2-hookah">
-                    <Link to="/newyork/hookah">Hookah Bar</Link>
+                    <Link to="/newyork/hookahbar">Hookah Bar</Link>
                 </div>
                 <div className="NYbarslist-row2-dive">
                     <Link to="/newyork/divebar">Dive Bar</Link>
                 </div>
                 <div className="NYbarslist-row2-whiskey">
-                    <Link to="/newyork/whiskey">Whiskey Bar</Link>
+                    <Link to="/newyork/whiskeybar">Whiskey Bar</Link>
                 </div>
             </div>
         </div>
