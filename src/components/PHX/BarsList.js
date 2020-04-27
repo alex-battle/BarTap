@@ -6,29 +6,29 @@ function BarsList() {
         <div className="barslist">
             <div className="NYbarslist-allBars">
                 <div className="NYbarslist-allBars-all">
-                    <Link to="/newyork/all">All Bars</Link>
+                    <Link to="/phoenix/all">All Bars</Link>
                 </div>
             </div>
             <div className="NYbarslist-row1">
                 <div className="NYbarslist-row1-lounges">         
-                    <Link to="/newyork/lounges">Lounges</Link>
+                    <Link to="/phoenix/lounges">Lounges</Link>
                 </div>
                 <div className="NYbarslist-row1-cocktail">
-                    <Link to="/newyork/cocktail">Cocktail</Link>
+                    <Link to="/phoenix/cocktail">Cocktail</Link>
                 </div>
                 <div className="NYbarslist-row1-sportsbar">
-                    <Link to="/newyork/sportsbar">Sports Bar</Link>
+                    <Link to="/phoenix/sportbar">Sports Bar</Link>
                 </div>
             </div>
             <div className="NYbarslist-row2">
                 <div className="NYbarslist-row2-hookah">
-                    <Link to="/newyork/hookahbar">Hookah Bar</Link>
+                    <Link to="/phoenix/hookahbar">Hookah Bar</Link>
                 </div>
                 <div className="NYbarslist-row2-dive">
-                    <Link to="/newyork/divebar">Dive Bar</Link>
+                    <Link to="/phoenix/divebar">Dive Bar</Link>
                 </div>
                 <div className="NYbarslist-row2-whiskey">
-                    <Link to="/newyork/whiskeybar">Whiskey Bar</Link>
+                    <Link to="/phoenix/whiskeybar">Whiskey Bar</Link>
                 </div>
             </div>
         </div>
